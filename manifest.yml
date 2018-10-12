@@ -1,0 +1,7 @@
+applications:
+- name: pcf-config-server
+  path: target/config-server-0.0.1-SNAPSHOT.jar
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git 
+  memory: 1G
+  services:
+  - config-server
